@@ -10,13 +10,13 @@ var result = document.getElementById('result');
 
 var titolo = 'La Divina Commedia';
 var autore = 'Dante Alighieri';
-var stringa = '';
+var stringa = 'la';
 titoloE.innerHTML = 'Titolo: ' + titolo;
 autoreE.innerHTML = 'Autore: ' + autore;
 stringaE.innerHTML = 'Stringa: ' + stringa;
 
 function checkString(a, b, c) {
-  var check = a.concat(b).toLowerCase().search(c);
+  var check = a.concat(b).toLowerCase().match(c);
   return check;
 }
 
